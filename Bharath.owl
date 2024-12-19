@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/11/chemistry"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#formedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#formedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Compound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalReaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#hasBondType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#hasBondType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Bond"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Compound"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#hasElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#hasElement">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Compound"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalReaction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#atomicNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#atomicNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalElement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#molecularWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#molecularWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Compound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#reactionTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#reactionTemperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalReaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Bond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Bond"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalElement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalReaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalReaction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Combustion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Combustion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalReaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Compound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Compound"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#CovalentBond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#CovalentBond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Decomposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Decomposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalReaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#InorganicCompound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#InorganicCompound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#IonicBond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#IonicBond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Bond"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Metal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Metal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Molecule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Molecule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#NobleGas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#NobleGas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#NonMetal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#NonMetal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#OrganicCompound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#OrganicCompound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Compound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#PeriodicTable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#PeriodicTable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Redox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Redox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalReaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#Synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2024/11/chemistry#ChemicalReaction"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
